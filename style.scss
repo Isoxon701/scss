@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+.container{
+    width: 500px;
+    height: 500px;
+    background-color: dodgerblue;
+    border-radius: 6px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    &:hover{
+        background-color: #f00;
+        border-radius: 50px;
+        transform: rotate(360deg);
+    }
+    &:active{
+        transform: scale(0.90);
+    }
+    .box{
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h1{
+            color: red;
+        }
+        &:hover{
+            h1{
+                color: blue;
+            }
+        }
+    }
+    @media (max-width:500px){
+        width: 300px;
+        .box{
+            border-radius: 0;
+        }
+    }
+}

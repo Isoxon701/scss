@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+.container {
+  width: 500px;
+  height: 500px;
+  background-color: dodgerblue;
+  border-radius: 6px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+}
+.container:hover {
+  background-color: #f00;
+  border-radius: 50px;
+  transform: rotate(360deg);
+}
+.container:active {
+  transform: scale(0.9);
+}
+.container .box {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .box h1 {
+  color: red;
+}
+.container .box:hover h1 {
+  color: blue;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 300px;
+  }
+  .container .box {
+    border-radius: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
